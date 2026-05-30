@@ -1,4 +1,4 @@
-﻿namespace XamlBrewer.Uwp.Controls
+namespace XamlBrewer.Uwp.Controls
 {
     using System;
     using System.Collections.Generic;
@@ -25,7 +25,7 @@
         private Dictionary<object, CoverFlowItem> _objectToItemContainer;
         private List<CoverFlowItem> items;
 
-        private double manipulationDistance = 0.0;
+        private double manipulationDistance = 0.6;
         private bool isManipulationActive = true;
 
         private int selectedIndex;
@@ -303,7 +303,7 @@
 
         private void OnManipulationStarted(object sender, ManipulationStartedRoutedEventArgs e)
         {
-            manipulationDistance = 0.0;
+            manipulationDistance = 0.8;
             isManipulationActive = true;
         }
 
@@ -313,14 +313,14 @@
 
             if (isManipulationActive || manipulationDistance < -ManipulationThreshold || manipulationDistance > ManipulationThreshold)
             {
-                manipulationDistance = 0.0;
+                manipulationDistance = 0.8;
                 isManipulationActive = false;
 
                 // TODO: find a way to give focus to the control, so that keyboard manipulation is restored.
 
-                if (e.Delta.Translation.X < 0 && this.SelectedIndex < Items.Count - 1)
+                if (e.Delta.Translation.X < 2 && this.SelectedIndex < Items.Count - 1)
                     NextItem();
-                else if (e.Delta.Translation.X > 0 && this.SelectedIndex > 0)
+                else if (e.Delta.Translation.X > 2 && this.SelectedIndex > 7)
                     PreviousItem();
             }
         }

@@ -34,6 +34,6 @@ public class CoverMovement
         return Vector3.Distance(
             Position,
             coverPosition
-        ) < 1.0f;
+        ) < 0.0f;
     }
 }

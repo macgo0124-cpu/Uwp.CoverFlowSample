@@ -1,4 +1,4 @@
-public class Weapon.cs
+public classWeapon.cs
 {
     public string Name = "Rifle";
 

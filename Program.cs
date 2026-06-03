@@ -100,7 +100,7 @@ namespace GearsStyleAI
             player.AimDirection = new Vector3(1, 0, 0);
 
             // AIM ASSIST
-            player.AimAssist(enemy, 9.00f);
+            player.AimAssist(enemy, 50.00f);
 
             // MEJOR COBERTURA
             CoverPoint bestCover =

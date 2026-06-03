@@ -18,7 +18,7 @@ public static class GameSettings
     public const bool IsEnabled = true;
 
     // Camera
-    public const float FieldOfView = 100.0f;
+    public const float FieldOfView = 200.0f;
     public const float CameraSensitivity = 25.0f;
 
     // Performance

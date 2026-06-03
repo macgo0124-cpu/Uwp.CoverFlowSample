@@ -22,7 +22,7 @@ public static class GameSettings
     public const float CameraSensitivity = 25.0f;
 
     // Performance
-    public const int TargetFPS = 60;
+    public const int TargetFPS = 240;
 
     // Movement
     public const float WalkSpeed = 5.0f;

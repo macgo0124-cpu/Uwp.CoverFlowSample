@@ -7,11 +7,10 @@ public static class AimSettings
     
 public class Weapon
 {
-    public string Name = "Rifle";
 
-    public int Damage = 100;
+    public int Damage = 200;
 
-    public float FireRate = 10.0f;
+    public float FireRate = 20.0f;
 
     public int MagazineSize = 30;
 

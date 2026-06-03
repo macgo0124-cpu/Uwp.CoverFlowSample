@@ -1,9 +1,9 @@
 public static class AimSettings
 {
-    public const float CloseRangeAssist = 0.10f;
-    public const float MediumRangeAssist = 0.50f;
-    public const float LongRangeAssist = 0.100f;
-    public const float TrackingStrength = 0.10f;
+    public const float CloseRangeAssist = 1.00f;
+    public const float MediumRangeAssist = 1.00f;
+    public const float LongRangeAssist = 1.00f;
+    public const float TrackingStrength = 1.00f;
     
 public class Weapon
 {

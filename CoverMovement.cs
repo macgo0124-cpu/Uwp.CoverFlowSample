@@ -18,14 +18,14 @@ public class CoverMovement
 {
     public Vector3 Position;
 
-    public float MoveSpeed = 1.0f;
+    public float MoveSpeed = 5.0f;
 
     public void MoveBetweenCover(Vector3 targetCover)
     {
         Position = Vector3.Lerp(
             Position,
             targetCover,
-            0.0f
+            5.0f
         );
     }
 

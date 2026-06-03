@@ -8,7 +8,7 @@ public static class AimSettings
 public class Weapon
 {
 
-    public int Damage = 200;
+    public int Damage = 500;
 
     public float FireRate = 20.0f;
 

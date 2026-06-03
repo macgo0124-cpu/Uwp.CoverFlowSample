@@ -25,9 +25,9 @@ public static class GameSettings
     public const int TargetFPS = 240;
 
     // Movement
-    public const float WalkSpeed = 5.0f;
-    public const float SprintSpeed = 8.0f;
-    public const float CoverMoveSpeed = 6.0f;
+    public const float WalkSpeed = 8.0f;
+    public const float SprintSpeed = 5.0f;
+    public const float CoverMoveSpeed = 3.0f;
 
     // Weapon
     public const int MagazineSize = 30;
@@ -35,10 +35,10 @@ public static class GameSettings
     public const int WeaponDamage = 100;
 
     // Health
-    public const int MaxHealth = 100;
-    public const int HealthRegenRate = 5;
+    public const int MaxHealth = 150;
+    public const int HealthRegenRate = 0.95;
 
     // AI
-    public const float EnemyDetectionRange = 50.0f;
-    public const float EnemyAttackRange = 30.0f;
+    public const float EnemyDetectionRange = 10.0f;
+    public const float EnemyAttackRange = 1.0f;
 }

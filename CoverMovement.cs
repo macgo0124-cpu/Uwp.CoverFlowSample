@@ -12,4 +12,28 @@ public class CoverMovement
             speed
         );
     }
+}using System.Numerics;
+
+public class CoverMovement
+{
+    public Vector3 Position;
+
+    public float MoveSpeed = 5.0f;
+
+    public void MoveBetweenCover(Vector3 targetCover)
+    {
+        Position = Vector3.Lerp(
+            Position,
+            targetCover,
+            0.1f
+        );
+    }
+
+    public bool IsInCover(Vector3 coverPosition)
+    {
+        return Vector3.Distance(
+            Position,
+            coverPosition
+        ) < 1.0f;
+    }
 }

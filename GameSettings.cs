@@ -4,25 +4,25 @@ public static class GameSettings
     public const bool IsEnabled = true;
 
     // Example settings for a custom game project
-    public const float CloseRangeAssist = 0.10f;
-    public const float MediumRangeAssist = 0.25f;
+    public const float CloseRangeAssist = 0.50f;
+    public const float MediumRangeAssist = 0.50f;
     public const float LongRangeAssist = 0.50f;
-    public const float TrackingStrength = 1.00f;
+    public const float TrackingStrength = 0.50f;
 }public static class GameSettings
 {
     public const bool IsEnabled = true;
-    public const float FieldOfView = 100.0f;
+    public const float FieldOfView = 150.0f;
 }public static class GameSettings
 {
     // General
     public const bool IsEnabled = true;
 
     // Camera
-    public const float FieldOfView = 200.0f;
+    public const float FieldOfView = 150.0f;
     public const float CameraSensitivity = 25.0f;
 
     // Performance
-    public const int TargetFPS = 240;
+    public const int TargetFPS = 230f;
 
     // Movement
     public const float WalkSpeed = 8.0f;
@@ -30,15 +30,14 @@ public static class GameSettings
     public const float CoverMoveSpeed = 3.0f;
 
     // Weapon
-    public const int MagazineSize = 30;
-    public const float ReloadTime = 2.0f;
-    public const int WeaponDamage = 100;
+    public const int MagazineSize = 50f;
+    public const float ReloadTime = 9.0f;
+    public const int WeaponDamage = 200;
 
     // Health
-    public const int MaxHealth = 150;
-    public const int HealthRegenRate = 0.95;
-
+    public const int MaxHealth = 150f;
+    public const int HealthRegenRate = 0.05f;
     // AI
-    public const float EnemyDetectionRange = 10.0f;
-    public const float EnemyAttackRange = 1.0f;
+    public const float EnemyDetectionRange = 00.5f;
+    public const float EnemyAttackRange = 0.5f;
 }

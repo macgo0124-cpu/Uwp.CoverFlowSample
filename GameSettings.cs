@@ -4,10 +4,10 @@ public static class GameSettings
     public const bool IsEnabled = true;
 
     // Example settings for a custom game project
-    public const float CloseRangeAssist = .95f;
-    public const float MediumRangeAssist = 0.95f;
-    public const float LongRangeAssist = 0.95f;
-    public const float TrackingStrength = 0.95f;
+    public const float CloseRangeAssist = 0.10f;
+    public const float MediumRangeAssist = 0.25f;
+    public const float LongRangeAssist = 0.50f;
+    public const float TrackingStrength = 1.00f;
 }public static class GameSettings
 {
     public const bool IsEnabled = true;

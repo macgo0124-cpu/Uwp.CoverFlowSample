@@ -18,7 +18,7 @@ public class CoverMovement
 {
     public Vector3 Position;
 
-    public float MoveSpeed = 1.00f;
+    public float MoveSpeed = 1.0f;
 
     public void MoveBetweenCover(Vector3 targetCover)
     {

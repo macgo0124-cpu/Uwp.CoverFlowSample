@@ -25,7 +25,7 @@ public class CoverMovement
         Position = Vector3.Lerp(
             Position,
             targetCover,
-            0.1f
+            0.0f
         );
     }
 

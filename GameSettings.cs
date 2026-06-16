@@ -1,30 +1,43 @@
-public static class GameSettings
+using UnityEngine;
+
+public class WeaponController : MonoBehaviour
 {
-    // Core System
-    public const bool IsEnabled = true;
+    [Header("Daño")]
+    public float baseDamage = 300f;
+    public float shortRangeMultiplier = 2f;
+    public float mediumRangeMultiplier = 1.5f;
 
-    // Camera Configuration
-    public const float FieldOfView = 200.0f;
-    public const float CameraSensitivity = 25.0f;
+    [Header("Apuntado")]
+    public float aimAssistStrength = 100f;
+    public float aimAssistRange = 50f;
 
-    // Performance Targets
-    public const int TargetFPS = 230;
+    [Header("Retroceso")]
+    public float verticalRecoil = 0f;
+    public float horizontalRecoil = 0f;
 
-    // Player Movement
-    public const float WalkSpeed = 8.0f;
-    public const float SprintSpeed = 5.0f;
-    public const float CoverMoveSpeed = 3.0f;
+    private void Update()
+    {
+        ApplySettings();
+    }
 
-    // Weapon Configuration
-    public const int MagazineSize = 50;
-    public const float ReloadTime = 9.0f;
-    public const int WeaponDamage = 200;
+    private void ApplySettings()
+    {
+        // Mantener retroceso desactivado
+        verticalRecoil = 0f;
+        horizontalRecoil = 0f;
 
-    // Player Health System
-    public const int MaxHealth = 150;
-    public const float HealthRegenRate = 0.05f;
+        // Aquí puedes aplicar otras configuraciones
+        // a tu sistema de disparo, cámara o apuntado.
+    }
 
-    // AI Combat Behavior
-    public const float EnemyDetectionRange = 0.5f;
-    public const float EnemyAttackRange = 0.5f;
+    public float GetDamage(float distance)
+    {
+        if (distance <= 10f)
+            return baseDamage * shortRangeMultiplier;
+
+        if (distance <= 30f)
+            return baseDamage * mediumRangeMultiplier;
+
+        return baseDamage;
+    }
 }
